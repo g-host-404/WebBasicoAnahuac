@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galerias</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #e5e5e5;
+}
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <section class="galeria1">
+        <figure>
+            <a href="images/rainbow-landscape-large.jpg" data-lightbox="portafolio1" data-title="Rainbow Landscape.">
+                <img src="images/rainbow-landscape-large-high.jpg" alt="Rainbow Landscape.">
+            </a>
+
+            <a href="images/PassingThrough.jpg" data-lightbox="portafolio1" data-title="Passing Through by Fawn.">
+                <img src="images/PassingThroughHigh.jpg" alt="Passing Through by Fawn.">
+            </a>
+
+            <a href="images/Rainbow Walk.jpg" data-lightbox="portafolio1" data-title="A Rainbow Walk.">
+                <img src="images/Rainbow-Walk-High.jpg" alt="A Rainbow Walk.">
+            </a>
+        </figure>
+    </section>
+    <section class="galeria2">
+            <h1>Superhero Supersymbols!</h1>
+
+            <div class="gallery cf">
+              <div>
+                <img src="images/superman-logo.jpg"/>
+              </div>
+              <div>
+                <img src="images/batman-logo.jpg"/>
+              </div>
+              <div>
+                <img src="images/flash-logo.jpg"/>
+              </div>
+              <div>
+                <img src="images/superboy-logo.jpg"/>
+              </div>
+              <div>
+                <img src="images/robin-logo.png"/>
+              </div>
+              <div>
+                <img src="images/kid-flash-logo.jpg"/>
+              </div>
+            </div>
+    </section>
+    <div>
+    <script src="js/jquery-3.3.1.min.js"></script> 
+    <script src="js/lightbox.js"></script>
+       
+</body>
+</html>
