@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejecicio 7: Flexbox</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        
+        body{
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+        p{
+            padding: 1em;
+        }
+        #container {
+            width: 600px;
+            height: 600px;
+            background-color: orange;
+
+            display: flex;
+            flex-wrap: wrap;  
+            justify-content: space-between;          
+        }
+        .caja{
+            width: auto;
+            height: 100px;
+        }
+        .box1{
+            background-color: purple;
+            height: 30px;
+        }
+        .box2{
+            background-color: blue;
+            height: 120px;
+
+        }
+        .box3{
+            background-color: forestgreen;
+            height: 60px;
+        }
+        .box4{
+            background-color: yellow;
+            height: 360px;
+        }
+        .box5{
+            background-color: red; 
+            height: 45px;
+        }
+        #container2 {
+            width: 100wv;
+            height: 600px;
+            background-color: pink;
+
+            display: flex;
+            flex-wrap: wrap;         
+        }
+        .caja-a{
+            flex-grow: 1;
+        }
+        .box6{
+            background-color: purple;
+        }
+        .box7{
+            background-color: blue;
+        }
+        .box8{
+            background-color: forestgreen;
+        }
+        .box9{
+            background-color: yellow;
+        }
+        .box10{
+            background-color: red; 
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <section class="box1 caja"><p>Caja 1</p></section>
+        <section class="box2 caja"><p>Caja 2</p></section>
+        <section class="box3 caja"><p>Caja 3</p></section>
+        <section class="box4 caja"><p>Caja 4</p></section>
+        <section class="box5 caja"><p>Caja 5</p></section>
+    </div>
+    <div id="container2">
+            <section class="box6 caja-a"><p>Caja 6</p></section>
+            <section class="box7 caja-a"><p>Caja 7 tiene más texto. Hmm pero no es suficiente. MOOOOAAAARRRR</p></section>
+            <section class="box8 caja-a"><p>Caja 8 menos? Menossss!!!!</p></section>
+            <section class="box9 caja-a"><p>Caja 9 Disque</p></section>
+            <section class="box10 caja-a"><p>Caja 10 Haro! Wazzup?</p></section>
+        </div>
+</body>
+</html>
